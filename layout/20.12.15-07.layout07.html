@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout7</title>
+  <!--  -->
+  <style>
+    /* 전체 레이아웃 */
+    /* 자식에 있는 가로세로크기의 합이 부모전체가 될 경우 부모에서 정의할 필요가 없다.  또는 부모의 내용을 상속받아 사용해도 된다. */
+    #wrap{}
+    #header{}
+    #banner{height:300px; background:#222;}
+    #contents{ height:400px; background:#333;}
+    #footer{height:100px;background:#444;}
+    
+    /* header */
+    #header-top{height:50px;background:#b2ebf2;}
+    #header-nav{height:50px;background:#80deea;}
+
+    /* header-container  */
+    .container { width:60%; margin:0 auto; height:inherit;background:rgba(0,0,0,0.3);}
+  </style>
+</head>
+<body>
+  <div id="wrap">    
+    <!--header  -->
+    <div id="header">
+      <div id="header-top"><div class="container">header-top</div></div>
+      <div id="header-nav"><div class="container">header-nav</div></div>
+    </div>
+    
+    <div id="banner">
+    
+    </div>
+    
+    <div id="contents">
+
+    </div>
+    
+    <div id="footer">
+
+    </div>
+  </div><!--  -->
+  
+</body>
+</html>
