@@ -13,3 +13,8 @@ a {
 a:hover{
     color:#333;
 }
+
+/* 폰트 초기화 */
+body, input, textarea, select, button, table{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}

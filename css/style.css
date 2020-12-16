@@ -5,11 +5,11 @@
 #skip a {
     position: absolute;
     left:0px;
-    top:-35px;
+    top:-40px;
     border: 1px solid #fff ;
     color: #fff;
     background: #333;
-    line-height: 30px;
+    line-height: 20px;
     width: 100px;
     font-size: 10px;
     text-align: center;
@@ -49,5 +49,30 @@
 
 
 /* 컨테이너 */
-.container{width: 90%; margin: 0 auto; height: inherit; background: rgba(0,0,0,0.3);}
+.container{width: 90%; margin: 0 auto; height: inherit; /* background: rgba(0,0,0,0.3) */}
 
+/* 헤더 */
+/* text는 주로 인라인형태, 박스형태는 블락형태 */
+.header{}
+.header .header-menu{text-align: right;}
+.header .header-menu a{ color:#fff; padding : 10px 0; display:inline-block ;}
+.header .header-menu a:hover { color:#666;}
+.header .header-tit{text-align: center; }
+.header .header-tit h1{
+     background: #4aa8d4;
+     font-style: 28px;
+     padding: 10px; 
+     display:inline-block;
+     color: #fff;
+     padding:5px 20px 6px 20px;
+     line-height: 1.5;
+     margin-top: 40px;
+    }
+.header .header-tit a{
+    display:inline-block;
+    background: #2698cb; 
+    font-size: 18px;
+    padding: 5px 20px 6px 20px;
+    
+}
+.header .header-icon{}
