@@ -21,10 +21,7 @@
 /* 레이아웃 */
 #warp {
     
-    margin:0 auto;
-    font-size: 20px;
-    text-align: center;
-    color:#fff;
+
 }
 #header {
     
@@ -33,7 +30,6 @@
 }
 #contents {
     
-    background: #222222;
 }
 #footer {
     
@@ -42,7 +38,7 @@
 }
 
 /* 컨텐츠 레이아웃 */
-#cont_nav{height: 200px;background: #444444;}
+#cont_nav{}
 #cont_tit{height: 200px;background: #555555;}
 #cont_ban{height: 200px;background: #666666;}
 #cont_cont{height: 200px;background: #777777;}
@@ -53,7 +49,7 @@
 
 /* 헤더 */
 /* text는 주로 인라인형태, 박스형태는 블락형태 */
-.header{}
+
 .header .header-menu{text-align: right;}
 .header .header-menu a{ color:#fff; padding : 10px 0; display:inline-block ;}
 .header .header-menu a:hover { color:#660000;}
@@ -110,3 +106,30 @@
 .header .header-icon a.icon4:hover{
     background-position: -60px -180px;
 }
+/* float:left 로 인한 영역 깨짐(height:0) 방지법 
+1. 깨지는 영역에 똑같이:left를 사용한다.(좋지 않음)
+2. float의 성질을 차단하는 clear:both; 를사용한다. (잘 사용하지 않음)
+3. float을 사용한 상위박스한테 overflow:hidden을 사용 -> 현재 많이 사용
+4. clearfix를 사용합니다. 가장 좋은 방법
+*/
+/* 전체 메뉴 */
+
+.nav {overflow: hidden; padding: 30px 0;}
+.nav > div {
+    float:left;
+    width: 40%;
+}
+.nav > div:last-child{
+    width: 20%;
+}
+.nav >div.last {
+    width: 20%;
+}
+.nav > div h3 {font-size:18px; color:#25a2d0 ; margin-bottom: 4px;}
+
+.nav > div ol{ overflow: hidden;}
+.nav > div ol li{ float: left; width: 50%; margin : 3px 0;}
+.nav > div ol li a:hover{ text-decoration: underline;}
+
+.nav > div.last ol li { width:100%;}
+
