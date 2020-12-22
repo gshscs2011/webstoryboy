@@ -34,6 +34,10 @@ h1, h2, h3, h4, h5, h6{
     font-size: 13px;color: #222;font-weight: normal;
 }
 
+/* 테두리 초기화 */
+/* 필드셋에는 기본적은 테두리가 생긴다. img는 익스9에서 테두리가 생김*/
+img, fieldset {border: 0 none;}
+
 /* image background 이미지 대체적용 IR 효과 */
 .ir_pm{
     display: block;
