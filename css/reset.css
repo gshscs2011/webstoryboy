@@ -38,6 +38,10 @@ h1, h2, h3, h4, h5, h6{
 /* 필드셋에는 기본적은 테두리가 생긴다. img는 익스9에서 테두리가 생김*/
 img, fieldset {border: 0 none;}
 
+/* 버튼 초기화 */
+button { border:0 none; }
+
+
 /* image background 이미지 대체적용 IR 효과 */
 .ir_pm{
     display: block;
